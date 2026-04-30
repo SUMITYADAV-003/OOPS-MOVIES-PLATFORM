@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# frontend build files
+dist/
+build/
+
+# environment variables
+.env
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# editor files
+.vscode/
+.idea/
+
+# package lock files (optional)
+package-lock.json
+yarn.lock
