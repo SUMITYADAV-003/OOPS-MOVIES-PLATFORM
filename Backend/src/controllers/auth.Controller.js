@@ -194,5 +194,6 @@ export const logout = async(req,res) => {
 };
 
 export const getMe  = async(req,res) => {
-  const user = await userModel.findById()
+ const user = await userModel.findById(req.user.id);
+ console.log(user)
 }
