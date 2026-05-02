@@ -1,5 +1,6 @@
-import React from 'react'
-import Formgroup from '../components/Formgroup'
+
+import Formgroup from '../components/Formgroup';
+import "../Styles/Login.scss";
 
 const Login = () => {
   return (

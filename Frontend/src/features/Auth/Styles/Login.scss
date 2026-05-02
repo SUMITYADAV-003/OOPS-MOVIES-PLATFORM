@@ -1,0 +1,46 @@
+.login-page{
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+
+    border: 2px solid orange;
+    max-width: 350px;
+    border-radius: 0.5rem;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .form-group{
+      display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+    input{
+      border: none;
+      padding-inline: 1rem;
+      padding-block: 0.4rem;
+      border: 1px solid #ccc;
+      outline: none;
+      border-radius: 0.25rem;
+    }
+      
+    }
+
+
+
+  }
+
+}

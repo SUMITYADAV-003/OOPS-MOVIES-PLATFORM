@@ -1,0 +1,18 @@
+.button{
+  background: linear-gradient(to bottom, rgb(220, 84, 84) , rgb(236, 71, 98));
+  padding-inline: 1rem;
+  padding-block: 0.35rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  overflow: none;
+  color: white;
+}
+
+.button {
+  transition: transform 0.3s ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
