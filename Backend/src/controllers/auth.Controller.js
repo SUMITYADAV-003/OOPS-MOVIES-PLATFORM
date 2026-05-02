@@ -94,7 +94,7 @@ export const register = async (req, res) => {
       user: {
         id: newUser._id,
         username: newUser.username,
-        email: newUser.email, // ✅ FIXED
+        email: newUser.email,
         role: newUser.role,
       },
     });
@@ -194,6 +194,22 @@ export const logout = async(req,res) => {
 };
 
 export const getMe  = async(req,res) => {
- const user = await userModel.findById(req.user.id);
- console.log(user)
+  try{
+    const user = await userModel.findById(req.user.id);
+    res.status(200).json({
+      success: true,
+      user
+    });
+
+
+  } catch(error) {
+    res.status(500).json({
+      success: false,
+      message: "Server Error",
+      error: error.message,
+    })
+
+  }
+ 
+  
 }
